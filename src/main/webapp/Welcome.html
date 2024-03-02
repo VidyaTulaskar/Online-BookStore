@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>BookStore</title>
+<link rel="icon" href="image/logo.png"/>
+<link rel="stylesheet" href="Register.css"/>
+<style>
+       h1 {
+            font-size: 70px;
+            font-weight: 500;
+            /*color: #553c9a;*/
+            color:  rgb(249, 51, 90);
+            border-right: 4px solid #000;
+            animation: cursor 1s infinite step-end, typing 12s infinite steps(19);
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        @keyframes cursor {
+            0%, 100% {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #000;
+            }
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0ch
+            } /*Text is hidden*/
+            30% {
+                width: 19ch;
+            } /*The entire header will be typed out*/
+            80% {
+                width: 19ch;
+            } /*Text stays visible*/
+            90% {
+                width: 0ch;
+            } /*Text is deleted*/
+            100% {
+                width: 0ch;
+            } /*Text stays hidden*/
+        }
+        .link {
+            position: absolute;
+            bottom: 270px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+</style>
+</head>
+<body class="background-image">
+	<div class="container">
+		<h1>Welcome To BookStore</h1>
+		<div class="link">
+			<a href="Home.html">Show More</a>
+		</div>
+	</div>
+</body>
+</html>

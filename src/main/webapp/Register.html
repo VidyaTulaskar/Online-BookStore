@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>BookStore</title>
+<link rel="icon" href="image/logo.png"/>
+<link rel="stylesheet" href="Register.css"/>	
+<style>
+	.box{
+		width: 200px;
+		height: 490px;
+		padding: 40px;
+	}
+	#phno{
+		margin-bottom: 1px;
+	}
+	 .error {
+        color:rgb(204, 7, 2);
+  		display: inline-block;
+  		font-size: 15px;
+  		line-height: 16px;
+  		margin: 2px 0 0;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+</style>
+</head>
+<body class="background-image">
+	<div class="box">
+	<form id="registrationForm" action="reg" method="post">
+		UserName: <input type="text" name="uname" required><br>
+		PassWord: <input type="password" name="pword" required><br>
+		FirstName: <input type="text" name="fname" required><br>
+		lastName: <input type="text" name="lname" required><br>
+		Address: <input type="text" name="addr" require><br>
+		MailId: <input type="text" name="mid" required><br>
+		PhoneNo: <input type="text" name="phno" id="phno" required><br>
+		<span id="phoneError" class="error"></span><br><br>
+		<input type="submit" value="Register" id="submitBtn" disabled> 
+	</form>
+	</div>
+
+ <script>
+        document.getElementById('phno').addEventListener('input', validatePhoneNumber);
+
+        function validatePhoneNumber() {
+            var phoneNumber = document.getElementById('phno').value;
+            var phoneError = document.getElementById('phoneError');
+
+            var regex = /^\d{10}$/; // Regular expression for 10-digit phone number
+
+            if (!regex.test(phoneNumber)) {
+                phoneError.textContent = 'Invalid phone number';
+                document.getElementById('submitBtn').disabled = true;
+            } else {
+                phoneError.textContent = '';
+            	document.getElementById('submitBtn').disabled = false;
+            }
+        }
+</script>
+	
+</body>
+</html>

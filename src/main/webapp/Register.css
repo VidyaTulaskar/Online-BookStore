@@ -1,0 +1,84 @@
+@charset "ISO-8859-1";
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    align-items: center;
+}
+
+/* Style for body tags */
+.background-image{
+	background-image: url('image/BookYellow.jpg');
+	background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for div tags which is box class */
+.box{
+	background-color: rgb(238, 113, 113, 0.745);
+	margin: auto;
+	align-items: center;
+	font-weight: 600;
+	border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+/* Style for input tags */
+input{
+    color: #333;
+    background-color:#FFEFD5;
+    border: 1px solid #D2B48C;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-bottom: 5%;
+    margin-top: 5px;
+}
+/* Hover effect for input tags */
+input:hover {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Style for input tag of submit type */
+input[type="submit"]{
+	border:2px solid #D2B48C;
+	/*margin-top: 10px;*/
+}
+/* Hover effect for input tag of submit type */
+input[type="submit"]:hover{
+	background-color: mediumslateblue;
+	color:aliceblue;
+	border:1px solid #007bff;
+}
+     
+/* Style for anchor tags */
+.container a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Set text color */
+    padding: 5px 10px; /* Add padding */
+    border: 1px solid #333; /* Add border */
+    background-color: #f0f0f0; /* Set background color */
+    border-radius: 5px; /* Add border radius */
+}
+
+/* Hover effect for anchor tags */
+.container a:hover {
+    background-color: #333; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+  
